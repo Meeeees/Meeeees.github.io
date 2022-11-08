@@ -15,7 +15,7 @@
     --background-color: #fff;
     --green: #5CDB95;
     --light-green: #8EE4AF;
-    --background-menu: linear-gradient(139deg, rgba(243, 242, 255, 1) 0%, #fff 48%, rgba(0, 212, 255, 1) 100%)
+    --background-menu: linear-gradient(138deg, rgba(0,91,255,1) 0%, rgba(255,113,113,1) 100%);
 }
 
 .content {
@@ -444,7 +444,35 @@ html {
     font-size: 1.8rem;
     color: #000;
     text-decoration: none;
-    background-color: var(--background-menu)
+    background-color: var(--background-menu);
+    width: fit-content;
+    margin-left: 20px !important;
+}
+
+.menuItem::after {
+    content: '';
+    display: block;
+    position: relative;
+    border-bottom: 3px solid white;
+    pointer-events: none;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -ms-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+}
+
+.menuItem:hover::after {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
 }
 
 .menu>li {
