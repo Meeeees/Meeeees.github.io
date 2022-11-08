@@ -1,0 +1,76 @@
+<!DOCTYpE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/6ee7061bfb.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="httdivs://undivkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googlepics.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image" href="/zonnepark website/pictures/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="formbody">
+  <div class="overlay">
+  <div class="containernav visible" id="container" style="color: black;">
+    <nav id="flex-nav">
+      <a href="index.html">Home</a>
+      <a href="Historie.html">Historie</a>
+      <!-- <a href="timeline.html">timeline</a> -->
+      <a href="contact.html">contact</a>
+    </nav>
+  </div>
+  <!-- phone menu -->
+  <ul class="menu">
+    <li><a class="menuItem" href="index.html">Home</a></li>
+    <br>
+    <li><a class="menuItem" href="Historie.html">Historie</a></li>
+    <br>
+    <li><a class="menuItem" href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger">
+    <i class="menuIcon material-icons">menu</i>
+    <i class="closeIcon material-icons">close</i>
+  </button>
+
+  <div class="white-background">
+    <h2>neem contact op!</h2>
+    <form class="form" action="https://formsubmit.co/4a44a9c854c45f300e2574fdb50fe16c" method="POST">
+      <div class="floating-placeholder">
+        <input type="text" name="Naam" id="myText" class="formbox" required>
+        <span class="label">Naam</span>
+      </div>
+      <div class="floating-placeholder">
+        <input type="text" name="em.ail" class="formbox" required>
+        <span class="label">email</span>
+      </div>
+      <div class="floating-placeholder">
+        <input type="tel" name="telefoon-nummer" class="formbox" required>
+        <span class="label">tel-num</span>
+      </div>
+      <div class="floating-placeholder messageform">
+        <textarea class="form-control formbox" name="message" rows="5" required></textarea>
+        <span class="label messagelabel">Je bericht</span>
+      </div>
+
+      <!-- <input type="tel" name="telefoon nummer" class="formbox" placeholder="Telefoon nummer"><br>
+      <div class="floating-placeholder">
+        <textarea class="form-control formbox" placeholder="your message" name="message" rows="5" required></textarea>
+      </div>
+      <input type="hidden" name="_next" class="formbox" value="httdiv://127.0.0.1:5500/nextcontact.html"> <br> -->
+      <button type="submit" class="formbutton" onclick="myFunction()">Send</button>
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/nextcontact.html">
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <script src="scriptname.js"></script>
+</div>
+</body>
+
+</html>
